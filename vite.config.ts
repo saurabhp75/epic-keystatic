@@ -70,4 +70,7 @@ export default defineConfig({
 				})
 			: null,
 	],
+	ssr: {
+		noExternal: [/^@keystatic\//, 'minimatch'],
+	},
 })
